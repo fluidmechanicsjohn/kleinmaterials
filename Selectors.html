@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--I believe that I have successfully fulfilled the requirements for lab#3. In my styleselectors.css I have grouped selectors, grouped declarations, and I have included a universal selector (*). I wrote an article about what class and ID selectors are and stylized it so it is easy on the eyes. Lastly, on this HTML document I have included a header, nav, article, section, and footer element.-->
+<meta charset="utf-8">
+
+<title>Selectors</title>
+
+<link type="text/css" rel="stylesheet" href="style2.css">
+<link type="text/css" rel="stylesheet" href="styleselectors.css">
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Prociono|Fontin|Vollkorn">
+<link type="text/css" rel="stylesheet" href="printstyle.css" media="print">
+<link type="text/css" rel="stylesheet" href="pulldownlinks.css"> <!--this is a new stylesheet to make drop-down links-->
+<link type="text/css" rel="stylesheet" href="linkstyle.css">
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Alegreya+Sans|Chicle' rel='stylesheet' type='text/css'> <!--these are new google fonts I am importing to experiment with for lab#9-->
+<link type="text/css" rel="stylesheet" href="fontstyle.css"><!--This is a new stylesheet for lab#9-->
+</head>
+
+<body>
+
+<div class="banner">
+	<p id="text"> CSS Selectors: <br>Class and ID</p> <!--I am using an ID selector to stylize the text that is nested within the banner div. Using CSS I can make the text display over the background image of the guitar--> 
+</div>
+
+<nav>
+        <ul>
+	<li><a href="Index.html" class="button1">HOME</a> </li>
+	<li> <a href="DomainName.html" class="button1">DOMAIN NAME</a></li>
+	<li> <a href="Selectors.html" class="button2">SELECTORS</a></li>
+	<li> <a href="CSS.html" class="button1">CSS</a></li>
+	<li> <a href="PixelsColor.html" class="button1">PIXELS/COLOR</a></li>
+        <li> <a href="Reflections.html" class="button1">REFLECTIONS</a></li>
+	<li><a href="#" class="button1">MORELABS</a>
+		<ul>
+			<li><a href="#" class="button2">MORELABS</a></li>
+			<li><a href="popup.html" class="button1">POPUP</a></li>
+			<li><a href="resources.html" class="button1">RESOURCES</a></li>
+			<li><a href="review.html" class="button1">REVIEW</a></li>
+		</ul>
+	</li>
+	</ul>
+</nav>
+
+<section> <!--Here is the section element and within it is a heading and article element.-->
+
+	<header> <!--Here is the HTML5 header element and is used to style the title of the article.-->
+
+ 	 Making Conversation with HTML and CSS 
+
+	</header>
+
+		<div class="meta">An <span>Article</span> by <span>John Klein</span>
+		</div> <!--Here a div is used to italicize and color the font grey. Within the meta div are some spans in order to colorize with the green aqua color and stylize the words "Article" and my name "John Klein"-->
+
+
+	<article> <!--Here is the HTML5 article element. Within this element are my paragraphs explaining what selectors are and how they are used.-->
+		<p> Eric A. Meyer writes:</p>
+
+	<img src="images/openquote.gif" id="quote" alt="Picture of Open Quotes"><!--Here is the use of an image with an ID selector-->
+
+		<blockquote>
+		By using selectors based on the document's language, authors can create CSS rules that apply to a large number of similar elements just as 		easily as they can construct rules that apply in very narrow circumstances The ability to group together both selectors and rules keeps style 		sheets compact and flexible, which incidentally leads to smaller file sizes and faster download times.
+		</blockquote>
+
+		<p>Just to review, selectors are a fundamental tool that allows the designer in CSS to call up and alter specific elements in the HTML 			document. Selectors "select" elements in HTML to be styled. A selector can be any of the HTML elements such as <span class="code">p, a, em, 		body, blockquote</span>.
+		In CSS The format of a rule to be applied to an element or sets of elements is as follows:<br><br> <span class="code">blockquote, p {<br>font-		family: Verdana;<br>
+		text-shadow: 0.04em 0.04em 0.05em #00cc99;<br>}</span>
+		<br><br>
+From now on whatever text is defined with the <span class="code">blockquote </span>or <span class="code">paragraph</span> tag will be rendered with Verdana font-family and have a text-shadow just like the text in my banner above. This is a perfect example of grouping multiple selectors (<span class="code">blockquote</span>,<span class="code">p</span>) and grouping multiple declarations. The end result is a global transformation of a webpage containing these elements.  <br><br>
+Now to the topic of this article: to distinguish the difference between <span class="italic">class selectors</span> and <span class="italic">ID selectors</span>. The biggest difference between these selectors is that a class selector can be applied to multiple elements in the HTML document while an ID selector can only pertain to one unique element. If you apply an ID to multiple elements in your HTML then you will not be able to pass the W3C validator as this is incorrect. The class selector uses a period (ex: <span class="code">.button1</span>) to be called up in CSS while the ID selector uses a number sign (ex: <span class
+="code">#insertyouridnamehere</span>). Let me provide an example of a class selector using code from this webpage. The buttons at the top of the page are links. Each button has the same appearance. I made the style for the button in CSS and applied that same style to the rest of the buttons using the same class selector within the anchor tag in the HTML markup.
+<br><br>
+The end result:<br><br>
+<a href="#" class="button1">Hello World!</a><br><br>
+Here is the html code:<br><span class="code">&lt;a href=&quot;insertyoururl.com&quot; class=&quot;button1&quot;&gt;Hello World!&lt;/a&gt;</span><br><br>
+
+
+Here is the CSS code:<br><span class="code">/*Anchor text is white and there will no longer be an underline*/
+<br>a {<br>
+  color: #fff;<br>
+  text-decoration: none;<br>
+}<br><br>
+
+/*When you hover over a button the text will turn black*/<br>
+a:hover<br> {<br>
+	color:black;<br>
+}<br><br>
+
+
+
+/*These are the styles for the normal gray buttons*/<br>
+.button1 {<br>
+  background: #70646A;<br>
+  border: 3px solid #eee;<br>
+  height: 20px;<br>
+  width: 150px;<br>
+  margin: 0 0 0 0;<br>
+  overflow: hidden;<br>
+  display: block;<br>
+  text-align: center;<br>
+  line-height: 25px;<br>
+  font: 15px/1.5 Helvetica, Arial, sans-serif;<br>
+  
+
+/*Rounded Corners*/<br>
+ -webkit-border-radius: 10px;<br>
+ -moz-border-radius: 10px;<br>
+ border-radius: 10px;<br>
+  
+
+  
+ /*Shadow*/<br>
+ -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);<br>
+ -moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);<br>
+ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);<br>
+
+
+/*Transition*/<br>
+-webkit-transition: All 0.5s ease;<br>
+-moz-transition: All 0.5s ease;<br>
+-o-transition: All 0.5s ease;<br>
+-ms-transition: All 0.5s ease;<br>
+transition: All 0.5s ease;<br>
+
+float: left;<br>
+
+}<br><br>
+
+
+/*When the mouse goes over the gray button it turns turquoise.*/<br>
+.button1:hover {<br>
+  background-color: #00cc99;<br>
+}</span><br><br>
+
+</p>
+
+
+	</article>
+
+
+
+
+			<div class="date">Created: September 7, 2013</div>
+		<footer>
+		<!--Here is the HTML5 footer. Within it I have the copyright information.-->
+		&copy; Klein Design Inc. | Some Rights Reserved
+		</footer>
+
+</section>
+
+</body>
+
+</html>
+<!--Last Updated: 09/07/13-->

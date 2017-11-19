@@ -1,0 +1,292 @@
+/*This is a new stylesheet I am making for pixels/color webpage (lab #5).*/
+
+
+
+body {
+
+	background-image: url(images/galaxy.jpg); /*This is the space background and is a super large image*/
+        background-repeat: repeat;
+	font-family: Vollkorn, sans-serif; /*Vollkorn is a Google Font*/
+	margin-top:0px;
+
+}
+
+
+
+
+/*This includes a new grey border and a white drop shadow.*/
+.banner {
+	width: 890px;
+	height: 82px;
+	box-shadow: 1px 1px 25px 1px #888888;
+	margin: auto;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;border-radius: 3px 3px 3px 3px;
+	border:1px solid grey;
+	background:rgba(255,255,255,0.0);
+	border-top: none;
+	background-image:url('images/Browser.jpg');
+	background-repeat: no-repeat;
+} /*Instead of using an image src in HTML I am setting the image as a background. This is so I can put text over the background. The image I made using Internet browser logos in Photoshop.*/
+
+.banner:hover{
+opacity: 0.8;
+} /*When your mouse goes over the banner you can see some of the stars behind it*/
+
+
+/*Here are is the style for the HTML5 nav group where the buttons are nested*/
+nav {
+
+  width: 910px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  border: none ;
+  margin-top: 10px;
+  background: none;
+  opacity:0.95;
+  height: 30px;
+	
+}
+
+
+/*Anchor text is white and there will no longer be an underline*/
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/*These are the styles for a gradient button generated from http://www.colorzilla.com/gradient-editor*/
+.button1 {
+background: #111111;
+background: -moz-linear-gradient(top,  #111111 0%, #252525 0%, #bc003f 0%, #3e3e3e 47%, #000000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#111111), color-stop(0%,#252525), color-stop(0%,#bc003f), color-stop(47%,#3e3e3e), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #111111 0%,#252525 0%,#bc003f 0%,#3e3e3e 47%,#000000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #111111 0%,#252525 0%,#bc003f 0%,#3e3e3e 47%,#000000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #111111 0%,#252525 0%,#bc003f 0%,#3e3e3e 47%,#000000 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #111111 0%,#252525 0%,#bc003f 0%,#3e3e3e 47%,#000000 100%); /* W3C */
+
+-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+   border-radius: 3px 3px 3px 3px;
+
+
+
+
+  height: 20px;
+  width: 128px;
+  margin: 0 0 0 0;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  line-height: 25px;
+  font: 15px/1.5 Helvetica, Arial, sans-serif;
+  border: grey 1px solid;
+ opacity: 0.72;
+
+  
+ /*Shadow*/
+ -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+ -moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+
+
+/*Transition*/
+-webkit-transition: All 0.5s ease;
+-moz-transition: All 0.5s ease;
+-o-transition: All 0.5s ease;
+-ms-transition: All 0.5s ease;
+transition: All 0.5s ease;
+
+float: left;
+
+}
+
+
+/*When the mouse goes over the button it turns a different gradient.*/
+.button1:hover {
+opacity:1.0;
+
+
+}
+
+
+/*This is the button pertaining to the page you are currently viewing*/
+.button2 {
+background: #bc003e;
+background: -moz-linear-gradient(top,  #bc003e 22%, #3e3e3e 62%, #000000 96%, #252525 100%, #111111 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(22%,#bc003e), color-stop(62%,#3e3e3e), color-stop(96%,#000000), color-stop(100%,#252525), color-stop(100%,#111111)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #bc003e 22%,#3e3e3e 62%,#000000 96%,#252525 100%,#111111 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #bc003e 22%,#3e3e3e 62%,#000000 96%,#252525 100%,#111111 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #bc003e 22%,#3e3e3e 62%,#000000 96%,#252525 100%,#111111 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #bc003e 22%,#3e3e3e 62%,#000000 96%,#252525 100%,#111111 100%); /* W3C */
+
+
+  height: 20px;
+  width: 128px;
+  margin: 0 0 0 0;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  line-height: 25px;
+  font: 15px/1.5 Helvetica, Arial, sans-serif;
+  
+  
+
+  
+ /*Shadow*/
+ -webkit-box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.2);
+ -moz-box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.2);
+ box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.2);
+
+
+/*Transition*/
+-webkit-transition: All 0.5s ease;
+-moz-transition: All 0.5s ease;
+-o-transition: All 0.5s ease;
+-ms-transition: All 0.5s ease;
+transition: All 0.5s ease;
+
+float: left;
+
+}
+
+
+
+
+#text {font-size: 2.1em;
+  text-align: center;
+  margin: 0px;
+  padding-top: 20px;
+  text-shadow: 0.04em 0.04em 0.05em white;
+  font-family: Georgia;
+  color: #75091E;
+  font-style: italic;
+  letter-spacing: 0.25em;
+  padding-bottom: 0.5em;
+/*This ID pertains to the text that goes over the background image. It says CSS3 is amazing and has a shadow.*/
+}
+
+footer, blockquote, .date, .meta {
+ color: #949494;
+} /*Here I am grouping four different selectors to all be the same dark grey.*/
+
+header {
+
+font-size: 3em;
+  letter-spacing: 0.1em;
+  color: #666666;
+  text-shadow: 2px 2px 1px white;
+  text-align: left;
+
+}
+
+
+
+header span{
+  display: block;
+  margin-top: 0.5em;
+  font-size: 0.6em;
+  font-weight: normal;
+  letter-spacing: 0em;
+  text-shadow: none;
+
+}
+
+
+.meta{ /*This makes the text within the meta div italicized and of a different font. This makes "An" and "by" italicized.*/
+  font-family: Georgia;
+  font-size: 0.85em;
+  font-style: italic;
+  letter-spacing: 0.25em;
+  border-bottom: 1px solid #666666;
+  padding-bottom: 0.5em;
+  text-shadow: 0.01em 0.01em 0.01em grey;
+} 
+
+.meta span{ /*This is the bright magenta color of the words "article" and my name*/
+  text-transform: capitalize;
+  font-style: normal;
+  color: #BF0549;
+}
+
+article p{
+  font-family: Verdana;
+  -moz-column-count: 1;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 1;
+  -webkit-column-gap: 1em;
+  column-count: 1;
+  column-gap: 1em;
+  line-height: 1.5em;
+  color: #949494;
+}
+
+article blockquote{
+  font-size: 1em;
+  font-family: "Fontin";
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1;
+  letter-spacing: 0.1em;
+  color: #949494;
+  
+}
+
+#quote{
+/*this id holds an image of an open quote floated to the left of the paragraph.*/
+float:left;
+}
+
+
+span.code { /*I did not use this span class but kept it in case I put in code for others to view.*/
+  font-family: "Fontin","Times New Roman",Georgia,Serif;
+  color:#003366;
+  font-size: small;
+}
+
+
+.date{
+  font-family: Georgia;
+  font-size: 0.75em;
+  font-style: italic;
+  letter-spacing: 0.25em;
+  border-top: 1px solid #666666;
+  display: block;
+  padding-top: 0.5em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+section {
+ width: 866px;
+ margin: auto;
+ background: none;
+ text-align: left;
+ background-color: black;
+ -webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+        border-radius: 3px 3px 3px 3px;
+	border:1px solid grey;
+ padding: 20px;
+ 
+}
+
+footer {
+ text-align: center;
+ margin: 2em ;
+}
+
+.italic {
+ font-style: italic;
+}
+
+span.number {
+font-family: Fontin;
+font-weight: bold;
+}
+
+/*Last Updated: 09/26/13*/

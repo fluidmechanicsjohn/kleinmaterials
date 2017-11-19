@@ -1,0 +1,115 @@
+.banner {
+        background-image: url('images/DomainNameBanner.jpg');
+
+    height: 200px ;
+   
+}
+.banner:hover {
+    background-image: url('images/DomainNameBannerSwap.jpg');
+  height: 200px
+}
+
+.banner:hover img{
+visibility: hidden;
+}
+
+header {
+
+font-size: 2.5em;
+  letter-spacing: 0.1em;
+  color: black;
+  text-shadow: 1px 1px 3px grey;
+  text-align: left;
+
+}
+
+
+
+header span{
+  display: block;
+  margin-top: 0.5em;
+  font-size: 0.6em;
+  font-weight: normal;
+  letter-spacing: 0em;
+  text-shadow: none;
+
+}
+
+
+.meta{
+  font-family: Georgia;
+  color: rgba(69,54,37,0.6);
+  font-size: 0.85em;
+  font-style: italic;
+  letter-spacing: 0.25em;
+  border-bottom: 1px solid rgba(69,54,37,0.2);
+  padding-bottom: 0.5em;
+}
+
+.meta span{
+  text-transform: capitalize;
+  font-style: normal;
+  color: #00cc99;
+}
+
+.body p{
+  font-family: Verdana;
+  -moz-column-count: 2;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 1em;
+  column-count: 2;
+  column-gap: 1em;
+  line-height: 1.5em;
+  color: rgb(69,54,37);
+}
+
+.body p:first-child{
+  font-size: 1.25em;
+  font-family: Georgia;
+  font-style: italic;
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1;
+  letter-spacing: 0.1em;
+}
+
+.body p:first-child:first-line{
+  font-weight: bold;
+}
+
+.date{
+  font-family: Georgia;
+  color: rgba(69,54,37,0.6);
+  font-size: 0.75em;
+  font-style: italic;
+  letter-spacing: 0.25em;
+  border-top: 1px solid rgba(69,54,37,0.2);
+  display: block;
+  padding-top: 0.5em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.container {
+
+ width: 700px;
+ margin: auto;
+ background: none;
+	text-align: left;
+}
+
+footer {
+ text-align: center;
+ margin: 2em ;
+ color: gray;
+
+}
+
+.italic {
+
+ font-style: italic;
+
+}
+
+/*Last Updated: 08/30/13*/

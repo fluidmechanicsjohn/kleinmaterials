@@ -1,0 +1,88 @@
+/*This is a new stylesheet I am using for resources.html. This will be used to fulfill the requirements of labs #10, #11, #12, and #15. For lab #10 in regards to information on font changes please see the resources.html I used the font style sheet for lab#9 to update fonts on this website as well. In addition this webpage has many alterations to fonts including text-shadows, underlines, sizing, and letter-spacing. It is obvious when you switch between this webpage and popup.html. I will attempt to place the code in order by assignment with comments to indicate that certain code is for certain assignments. I checked off all the bullet points for lab#10, #11, #12, and the list assignment of lab#15.*/
+
+
+
+
+
+h1 {
+font-size: 0.67em;
+margin: 10px 20px 15px 50px; /*For lab #11 The h1 element has different margins. This is where it says "Resources Used to Code My Website"*/
+}
+
+#text{
+font-family: 'Oleo+Script+Swash+Caps', sans serf; /*This is the heading at the top of the page on the banner that says "Welcome to my resources page. For lab #11 it has a different color and different style. It is purple and has a text shadow and letter spacing.*/
+color: #5300ad;
+font-size: 2.7em;
+font-style: normal;
+text-shadow: 2px 2px 3px white;
+letter-spacing: .1em;
+}
+
+
+p.bgp {
+background-image:url('images/paragraph.jpg'); /*For lab #12: I made an image of a galaxy as the background of my first paragraph. */
+background-repeat: repeat; /*The image is repeated along the x and y axis.*/
+border-style: dotted; /*For lab #11: I am altering the three attributes of border for this first paragraph (style, color, width_*/
+border-width: 3px;
+border-color:#00cc99;
+text-shadow: 2px 1px 2px #00cc99;
+font-size: 1.5em;
+padding: 10px; /*For lab #11 I placed padding over the first paragraph with image over it. Now the text has room to breathe.*/
+}
+
+body{
+background-image:url('images/backgroundnebula.jpg');
+}
+ /*For lab #12 I made a new background image as a nebula. In Photoshop I made some white space above so it fades into the image. This is the same image as the background of the paragraph above just a different part*/
+
+span.nebula {
+background-image:url('images/spacetop.jpg');
+padding: 10px;
+color: #00cc99;
+text-shadow: 2px 2px 3px black;
+text-decoration: underline; /*This is the header. This heading has a new style of underlined and a new color of that green I keep repeating throughout my site.*/
+} /*For lab#12 I made the span inline element in the header section have the nebula as the background. This is where is says "Resources Used to Code My Website". I added some padding too.*/
+
+
+
+.banner {
+	width: 890px;
+	height: 82px;
+	box-shadow: 1px 1px 25px 5px #888888;
+	margin: auto;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;border-radius: 3px 3px 3px 3px;
+	border:1px solid #666666;
+	background:rgba(255,255,255,0.0);
+	border-top: none;
+	background-image:url('images/spacecloudbanner.jpg');
+	background-repeat: no-repeat;
+} /*Instead of using an image src in HTML I am setting the image as a background. This is so I can put text over the background. The image I made using Internet browser logos in Photoshop.*/
+
+ol.resource {
+font-size: 2.1em;
+letter-spacing: 0.1em;
+/*The links all are of a larger size and have spacing between the letters*/
+}
+
+ol.resource li:hover a { 
+    color: #00cc99;
+}
+
+/*For Lab #15, Here I am calling up the class of ordered list I named "resource" in ordered to alter how it appears when the mouse hovers over a link placed on the list. This green is the same as the author 'John Klein' and 'A webpage.*/
+
+ol.resource li a { 
+    color: #5300ad;
+    text-shadow: 1px 1px 1px black;
+}
+
+/*For Lab #15: Here I am calling up the class of ordered list I named 'resource' in ordered to alter how it appears always It will always be the same purple color as used in the buttons.*/
+
+article{
+height: 625px;
+}
+
+div.meta{
+font-size: 1.5em;
+}
+/*Last Updated: 12/07/13 by John Klein*/

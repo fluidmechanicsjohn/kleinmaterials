@@ -1,0 +1,13 @@
+/* For the printout version I removed the banner div and nav element */
+.banner, nav
+{
+display: none;
+}
+
+/* So not as to waste paper I will make the content span the entire width of the page. My content is all within the div container */
+.container
+{
+width: 100%; margin: 0; float: none;
+}
+
+/*Last Updated: 08/30/13*/

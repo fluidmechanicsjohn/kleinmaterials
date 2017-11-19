@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Here is my lab#5 and is based off the setup from lab#4.--> 
+
+<meta charset="utf-8">
+
+<title>Pixels and Color</title>
+
+<link type="text/css" rel="stylesheet" href="style4.css">
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Prociono|Fontin|Vollkorn">
+<link type="text/css" rel="stylesheet" href="printstyle.css" media="print">
+<link type="text/css" rel="stylesheet" href="pulldownlinks.css"> <!--this is a new stylesheet to make drop-down links-->
+
+</head>
+
+<body>
+
+<div class="banner">
+
+	<p id="text">CSS<span class="number">3</span> is Amazing!</p> <!--I am using an ID selector to stylize the text that is nested within the banner div. Using CSS I can make the text display over the background image of the browsers--> 
+</div>
+
+
+<nav>
+        <ul>
+	<li><a href="Index.html" class="button1">HOME</a> </li>
+	<li> <a href="DomainName.html" class="button1">DOMAIN NAME</a></li>
+	<li> <a href="Selectors.html" class="button1">SELECTORS</a></li>
+	<li> <a href="CSS.html" class="button1">CSS</a></li>
+	<li> <a href="PixelsColor.html" class="button2">PIXELS/COLOR</a></li>
+        <li> <a href="Reflections.html" class="button1">REFLECTIONS</a></li>
+	<li><a href="#" class="button1">MORELABS</a>
+		<ul>
+			<li><a href="#" class="button2">MORELABS</a></li>
+			<li><a href="popup.html" class="button1">POPUP</a></li>
+			<li><a href="resources.html" class="button1">RESOURCES</a></li>
+			<li><a href="review.html" class="button1">REVIEW</a></li>
+		</ul>
+	</li>
+	</ul>
+</nav>
+
+<section> <!--Here is the section element and within it is a heading and article element.-->
+
+	<header> <!--Here is the HTML5 header element and is used to style the title of the article.-->
+<!--I have the word "pixels" in a span and each letter of the word "Colors" in a different span-->
+
+ 	 <span class="Pixels">Pixels</span> and <span class="C">C</span><span class="O">o</span><span class="L">l</span><span class="O2">o</span><span class="R">r</span><span class="S">s</span> 
+
+	</header>
+
+		<div class="meta">An <span>Article</span> by <span>John Klein</span>
+		</div> <!--Here a div is used to italicize and color the font grey. Within the meta div are some spans in order to colorize with the purple color and stylize the words "Article" and my name "John Klein"-->
+
+
+	<article>
+	<p>The creators of CSS implemented various methods for sizing and coloring elements in HTML. When sizing elements like fonts or margins the web developer must decide between the many kinds of absolute and relative units of length. Types of absolute length units included in CSS specifications are <span class="italic">inches (in), centimeters (cm), millimeters (mm), points (pt),</span>  and <span class="italic">picas (pc)</span>. One <span class="italic">point</span> is the same as 1/72 <span class="italic">in</span> and one <span class="italic">pica</span> is the same as 12 <span class="italic">pt</span>. These absolute measurements are rarely accurate in practice and thus are deprecated. This is because monitor size and resolution will alter the ratios of these so called &#34;absolute&#34; lengths.</p><p> Stylesheets using relative length units such as <span class="italic">em-height (em), x-height (ex),</span> and <span class="italic">pixels (px)</span> are more easily scalable from one output device to another. One <span class="italic">em</span> is equal to the font size declared within the element. One <span class="italic">ex</span> is the height of the letter x (x-height) in the font. Different fonts of the same size have different sized x's. Oftentimes browsers do not recognize the x-height of fonts so 1 <span class="italic">ex</span> defaults to 1/2 the font size. Traditionally, pixels are thought as absolute lengths but Eric Meyer is adamant that pixels should be defined as relative lengths:</p>
+<img src="images/openquote2.png" id="quote" alt="Picture of Open Quotes"><!--Here is the use of an image with an ID selector-->
+	<blockquote>
+	In its discussion of pixels, the CSS specification recommends that in cases where a display type is significantly different than 96ppi [pixels per inch], user agents should scale pixel measurements to a &#34;reference pixel.&#34; CSS2 recommended 90ppi as the reference pixel, but CSS2.1 recommends 96ppi&#8212;a measurement common to Windows machines and adopted by modern Macintosh browsers such as Safari…In general, if you declare something like <span class="code">font-size: 18px</span>, a web browser will almost certainly use actual pixels on your monitor&#8212;after all, they're already there&#8212;but with other display devices, like printers, the user agent will have to rescale pixel lengths to something more sensible. In other words, the printing code has to figure out how many dots there are in a pixel, and to do so, it may use the 96ppi reference pixel. Because of this potential for rescaling, pixels are defined as a relative unit of measurement, even though, in web design, they behave much like absolute units.
+		</blockquote>
+<p>Saying all this it is still up to the web designer to decide which type of length unit to size which elements of their webpage. Relative units may be more suited for elements that need to change size relative to how the text size changes whereas the more absolute pixel unit may be better suited for things like borders, absolute positioning of elements, and images.   </p>
+
+<p>When attempting to declare colors to elements the web designer is again faced with the decision of choosing the method that is best suited for what they are trying to accomplish. This is because CSS specifications include a variety of different ways to set color. For starters CSS2.1 defines 17 color names including <span class="italic">aqua, fuchsia, lime, olive, red, white, black, blue, yellow</span> to name a few. CSS3 specifies an even greater number of named colors and browsers that accommodate CSS3 will recognize up to 140 color names. However, with the use of <span class="italic">functional RGB notation</span> or hexadecimal notation up to 16,777,216 colors can be depicted in modern 24-bit web browsers. Let me provide some examples of how to code the same color using different notation below.</p>
+
+
+<p>The color purple as seen in the following text can be coded the following ways&#58;</p> <ul><li>in its color name&#58; <span class="purple"><span class="italic">purple</span></span></li>
+<li>as an RGB percentage&#58; <span class="purple"><span class="italic">rgb(50%,0%,50%)</span></span></li>
+<li>as an RGB numeric&#58; <span class="purple"><span class="italic">rgb(128,0,128)</span></span></li>
+<li>or in hexadecimal notation&#58; <span class="purple"><span class="italic">#800080</span></span></li>
+</ul><!--I made an unordered list for comparing different ways to color the same color purple.-->
+	</article>
+
+
+
+
+			<div class="date">Created: September 26, 2013</div>
+		<footer>
+		<!--Here is the HTML5 footer. Within it I have the copyright information.-->
+		&copy; Klein Design Inc. | Some Rights Reserved
+		</footer>
+<p><!--Here is an icon that takes you to the W3C validation of my CSS document "style4.css"-->
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!">
+</a>
+</p>
+</section>
+
+</body>
+
+</html>
+<!--Last Updated: 09/26/13-->

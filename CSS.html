@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--For the lab #4 I wrote on why CSS exists. I am experimenting with different overall styles. To do this I consolidated all of my styles for this webpage to style3.css. Eric Meyer's CSS: The Definitive Guide was helpful in writing this article but I used many internet sites to supplement Eric Meyer. For the style I used a color palette mostly of black, red/magenta, and grey text. I know that some people do not like these colors but I wanted to design a webpage completely different than my others.--> 
+
+<meta charset="utf-8">
+
+<title>Why Do Stylesheets Exist?</title>
+
+<link type="text/css" rel="stylesheet" href="style3.css">
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Prociono|Fontin|Vollkorn">
+<link type="text/css" rel="stylesheet" href="printstyle.css" media="print">
+<link type="text/css" rel="stylesheet" href="pulldownlinks.css"> <!--this is a new stylesheet to make drop-down links-->
+
+
+</head>
+
+<body>
+
+<div class="banner">
+
+	<p id="text">CSS<span class="number">3</span> is Amazing!</p> <!--I am using an ID selector to stylize the text that is nested within the banner div. Using CSS I can make the text display over the background image of the browsers--> 
+</div>
+
+
+<nav>
+        <ul>
+	<li><a href="Index.html" class="button1">HOME</a> </li>
+	<li> <a href="DomainName.html" class="button1">DOMAIN NAME</a></li>
+	<li> <a href="Selectors.html" class="button1">SELECTORS</a></li>
+	<li> <a href="CSS.html" class="button2">CSS</a></li>
+	<li> <a href="PixelsColor.html" class="button1">PIXELS/COLOR</a></li>
+        <li> <a href="Reflections.html" class="button1">REFLECTIONS</a></li>
+	<li><a href="#" class="button1">MORELABS</a>
+		<ul>
+			<li><a href="#" class="button2">MORELABS</a></li>
+			<li><a href="popup.html" class="button1">POPUP</a></li>
+			<li><a href="resources.html" class="button1">RESOURCES</a></li>
+			<li><a href= "review.html" class ="button1">REVIEW</a></li>
+		</ul>
+	</li>
+	</ul>
+</nav>
+
+<section> <!--Here is the section element and within it is a heading and article element.-->
+
+	<header> <!--Here is the HTML5 header element and is used to style the title of the article.-->
+
+ 	 Why Do Stylesheets Exist? 
+
+	</header>
+
+		<div class="meta">An <span>Article</span> by <span>John Klein</span>
+		</div> <!--Here a div is used to italicize and color the font grey. Within the meta div are some spans in order to colorize with the green aqua color and stylize the words "Article" and my name "John Klein"-->
+
+
+	<article>
+	<p>The markup language of HTML was originally designed strictly for structure and little attention was given to visual presentation. However, with the advent of the Mosaic web browser the demand skyrocketed for new ways to present text, images, and website elements. Users were looking to completely customize the appearance of their websites. In order to accommodate these demands later versions of HTML haphazardly incorporated a steadily growing barrage of presentational markup. The call for stylistic freedom was met with more presentational markup. Because the structural and presentational markup were enmeshed together the "structure" of the website was no longer cut and dry. Instead, markup inside websites became a mess. Webpages were filled to the brim with presentational information in effect blurring the actual structure. The impractical outcome was that indexing content became increasingly difficult, websites were not as accessible as they could be, advanced page presentation was hindered, and maintaining websites was totally inefficient.
+	<p>Eric Meyer writes:</p>
+<img src="images/openquote2.png" id="quote" alt="Picture of Open Quotes"><!--Here is the use of an image with an ID selector-->
+	<blockquote>
+	What we need is a way to combine structural markup with attractive page presentation…Of course, the problem of polluting HTML with presentational markup was not lost on the World Wide Web Consortium (W3C), which began searching for a quick solution. In 1995, the consortium started publicizing a work-in-progress called CSS. By 1996, it had become a full Recommendation, with the same weight as HTML itself. Here's why…In the first place, CSS allows for much richer document appearances than HTML ever allowed, even at the height of its presentational fervor.
+		</blockquote>
+<p>The rich styling of CSS reigns king over HTML's poor attempt. But the stylistic breadth of CSS is just the proverbial tip of the iceberg. The biggest perk to using a stylesheet is the consolidation of all presentational commands in one place. Any structural element within HTML is selectively modified by constructing a simple rule in CSS. Rather than having to style every single heading, paragraph, or text element where it arises like in the old-days of HTML, elements are simply called up once within CSS and declared a certain style. This makes editing the appearance of your site on a global scale highly efficient. HTML is now the site of structure and content while the stylesheet mandates how the content appears. Gone are the days of rummaging through cluttered HTML markup in order to add major or even minor changes to your site appearance.</p>
+<p>As stated before the specificity of CSS "selectors" permits fine-tuning of how content/elements look. Similarly, the <span class="italic">cascade</span> is a powerful tool that can be used to tweak specific pages. The effect of the <span class="italic">cascade</span> is any stylesheet that is imported after an already in place stylesheet will override the rules of the previous stylesheet. This is a logical provision to resolve conflicts between stylesheets. Whatever stylesheet is last on the list overrules the declarations of the previous stylesheet. This feature is ideal in the situation where you want one webpage to retain most of the rules from one stylesheet that is used across your website but also want to change some already declared rules without altering the entire site. In this case create another stylesheet with the style rules you want in place of the old rules and list the stylesheet below the previous stylesheet. The web browser <span class="italic">cascades</span> down to the final stylesheet when rendering styles.</p>
+	</article>
+
+
+
+
+			<div class="date">Created: September 17, 2013</div>
+		<footer>
+		<!--Here is the HTML5 footer. Within it I have the copyright information.-->
+		&copy; Klein Design Inc. | Some Rights Reserved
+		</footer>
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!">
+</a>
+</p>
+</section>
+
+</body>
+
+</html>
+<!--Last Updated: 09/17/13-->

@@ -1,0 +1,149 @@
+/*This style sheet is a modified version of my style1.css and will be used to change things that were implemented in style1.css. Right now all I have changed is the color of the border from white to black in the banner.
+
+The elements affected by this style sheet are the body, the banner div, and the nav buttons/links. Please see the styleselectors.css to see that I have fulfilled the requirements of the lab.*/
+
+
+body {
+
+	background-color: #ffffff ;
+	text-align: center;
+	font-family: Vollkorn, sans-serif; /*Vollkorn is a Google Font*/
+	margin-top:0px;
+
+}
+
+/*This is the banner div styles and includes a new BLACK border and drop shadow.*/
+.banner {
+	width: 667px;
+	height: 185px;
+	box-shadow: 10px 10px 50px 10px #888888;
+	margin: auto;
+	-webkit-border-radius: 13px 13px 13px 13px;
+	-moz-border-radius: 13px 13px 13px 13px;border-radius: 13px 13px 13px 13px;
+	border:15px solid black;
+	background:rgba(255,255,255,0.0);
+	border-top: none;
+	
+	
+
+
+}
+
+
+/*Here are is the style for the HTML5 nav group where the buttons are nested*/
+nav {
+
+  width: 770px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fcfcfc;
+  overflow: auto;
+  border: none ;
+  margin-top: 10px;
+  background: none;
+  opacity:0.70;
+  height: 40px;
+	
+}
+
+
+/*Anchor text is white and there will no longer be an underline*/
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/*When you hover over a button the text will turn black*/
+a:hover {
+	color:black;
+}
+
+
+
+/*These are the styles for the normal gray buttons*/
+.button1 {
+  background: #70646A;
+  border: 2px solid #eee;
+  height: 20px;
+  width: 105px;
+  margin: 0 0 0 0;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  line-height: 25px;
+  font: 14px/1.5 Helvetica, Arial, sans-serif;
+  
+
+/*Rounded Corners*/
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ border-radius: 10px;
+  
+
+  
+ /*Shadow*/
+ -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+ -moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+
+
+/*Transition*/
+-webkit-transition: All 0.5s ease;
+-moz-transition: All 0.5s ease;
+-o-transition: All 0.5s ease;
+-ms-transition: All 0.5s ease;
+transition: All 0.5s ease;
+
+float: left;
+
+}
+
+
+/*When the mouse goes over the gray button it turns turquoise.*/
+.button1:hover {
+  background-color: #00cc99;
+}
+
+
+/*This is the Turquoise Button Color*/
+.button2 {
+  background: #00cc99;
+  border: 2px solid #eee;
+  height: 20px;
+  width: 105px;
+  margin: 0 0 0 0;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  line-height: 25px;
+  font: 14px/1.5 Helvetica, Arial, sans-serif;
+  
+
+/*Rounded Corners*/
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ border-radius: 10px;
+  
+
+  
+ /*Shadow*/
+ -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+ -moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+
+
+/*Transition*/
+-webkit-transition: All 0.5s ease;
+-moz-transition: All 0.5s ease;
+-o-transition: All 0.5s ease;
+-ms-transition: All 0.5s ease;
+transition: All 0.5s ease;
+
+float: left;
+
+}
+
+
+/*Last Updated: 09/07/13*/

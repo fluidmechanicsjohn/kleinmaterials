@@ -1,0 +1,56 @@
+/*This is a new stylesheet I am using for review.html. */
+
+#text{
+font-family: 'Chicle';
+font-size: 1.5em;
+}
+body{
+background-image:url('images/finalbg.jpg');
+background-repeat: no-repeat;
+}
+
+/*The image of the book is floated to the right*/
+img#book{
+float:right;
+padding: 2px;
+}
+
+.meta{
+padding: 10px;
+}
+
+.meta span{
+color:#00cc99;
+}
+header{
+font-size: 3em;
+padding: 10px 10px 10px 10px
+}
+
+article p{
+  -moz-column-count: 2;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 1em;
+  column-count: 2;
+  column-gap: 1em;
+  line-height: 1.5em;
+  font-family: 'Alegreya Sans';
+  font-size: 1.3em;
+  padding: 5px;
+}
+
+article {
+width: 800px;
+}
+
+section{
+background-color: grey;
+opacity:0.85;
+width: 900px;
+border: 3px solid white;
+}
+
+footer{
+text-shadow: 1px 1px 1px black;
+}

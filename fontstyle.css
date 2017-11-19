@@ -1,0 +1,51 @@
+/*This is a new stylesheet for the requirements of lab#9. I have imported new Google fonts into my first 3 webpages (Index.html, DomainName.html, and Selectors.html) and will be using these fonts and other font attributes in this stylesheet to change these 3 webpages. The mood I am going for is a less formal tone. Therefore I imported some stylish Google fonts. Oleo script swash caps and Chicle are more creative fonts whereas the Alegreya Sans is more straightforward. Where the article of the webpage begins is where I integrate Alegrey so the emphasis is taken away from the wacky font and more towards what I am writing.*/
+
+body {
+
+font-family: 'Chicle', sans-serif;  /*unless otherwise specified the default font will be Google Font's Chicle. This only affects the header because it is not specified to a certain font.*/
+
+}
+
+.body p{
+  font-family: 'Alegreya Sans'; /*Awhile ago I created a div called body. From now on in this div there will be Alegreya Sans Google Font. */
+  -moz-column-count: 2;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 1em;
+  column-count: 2;
+  column-gap: 1em;
+  line-height: 1.5em;
+  color: rgb(69,54,37); /*The color is a lighter and redder black*/
+  
+}
+
+.body p:first-child{
+  font-size: 1em;
+  font-family: 'Alegreya Sans', sans serif; /*The first child of the div body which is just below the first border line will also be Alegreya Sans. This is the first sentence of the content on the Index.html and DomainName.html*/
+  font-style: italic;
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1;
+  letter-spacing: 0.1em;
+}
+
+.meta{
+  font-family: 'Oleo Script Swash Caps', cursive; /*Where it says "a webpage by John Klein is now in stylistic Google font Oleo*/
+  color: rgba(69,54,37,0.6);
+  font-size: 0.85em;
+  font-style: italic;
+  letter-spacing: 0.25em;
+  border-bottom: 1px solid rgba(69,54,37,0.2);
+  padding-bottom: 0.5em;
+}
+
+.meta span{
+  text-transform: capitalize;
+  font-style: normal;
+  color: #00cc99;
+}
+
+article p {
+  font-family: 'Alegreya+Sans', sans serif; /*The content of the article in the Selectors page will be the Alegreya Sans font*/
+}
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Here is the html page for my Mt. Rainier pop-text lab--> 
+
+<meta charset="utf-8">
+
+<title>Pop-Up Text</title>
+
+<link type="text/css" rel="stylesheet" href="stylepopup.css"> <!--This is the primary stylesheet I will be using. It allows me to make pop-text for the three images I chose.-->
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Prociono|Fontin|Vollkorn">
+<link type="text/css" rel="stylesheet" href="printstyle.css" media="print">
+<link type="text/css" rel="stylesheet" href="pulldownlinks.css"> <!--this is a new stylesheet to make drop-down links-->
+<link type="text/css" rel="stylesheet" href="linkstyle2.css"> <!--this stylesheet is made to tweak the navigation section specific to popup.html and is last on the cascade for this purpose-->
+</head>
+
+<body>
+
+<div class="banner">
+
+	<p id="text">Photoshop CS6 and<br> CSS<span class="number">3</span> are Amazing!</p> <!--I am using an ID selector to stylize the text that is nested within the banner div. Using CSS I can make the text display over the background image of the browsers--> 
+</div>
+
+
+<nav> 
+<!Each anchor link is nested within a list tag now so I can create a drop down menu at the end-->
+           <ul>
+	<li><a href="Index.html" class="button1">HOME</a> </li>
+	<li> <a href="DomainName.html" class="button1">DOMAIN NAME</a></li>
+	<li> <a href="Selectors.html" class="button1">SELECTORS</a></li>
+	<li> <a href="CSS.html" class="button1">CSS</a></li>
+	<li> <a href="PixelsColor.html" class="button1">PIXELS/COLOR</a></li>
+        <li> <a href="Reflections.html" class="button1">REFLECTIONS</a></li>
+	<li><a href="#" class="button2">MORELABS</a>
+		<ul>
+			<li><a href="#" class="button2">MORELABS</a></li>
+			<li><a href="popup.html" class="button1">POPUP</a></li>
+			<li><a href="resources.html" class="button1">RESOURCES</a></li>
+			<li><a href="review.html" class="button1">REVIEW</a></li>
+		</ul>
+	</li>
+	</ul>
+	</ul>
+</nav>
+
+<section> <!--Here is the section element and within it is a heading and article element.-->
+
+	<header> <!--Here is the HTML5 header element and is used to style the title of the article.-->
+
+ 	 My Mount Rainier Climbing Experience
+
+	</header>
+
+		<div class="meta">An <span>Article</span> by <span>John Klein</span>
+		</div> <!--Here a div is used to italicize and color the font grey. Within the meta div are some in order to stylize the words "Article" and my name "John Klein"-->
+
+
+	<article>
+	
+	<p>Hover over a photo to read about the picture.</p>
+
+        <!-- Each div has an image nested within it and a paragraph tag holding the text describing the image. In my CSS page I am able to allow the text to appear only when the mouse is hovered over the corresponding div.-->
+	<div class="textpopup1"><img src="images/rainier1.jpg" id="rainier1" alt="mount rainier picture 1"><p>Photographer Dave Morrow was clever enough to capture the dense center of the Milky Way projected above Mount Rainier. The human eye cannot see this many stars but a camera set to an exposure of 30 seconds on a clear night captures the impossibly massive galaxy.</p></div>
+
+	<div class="textpopup2"><img src="images/rainier2.jpg" id="rainier2" alt="mount rainier picture 2"><p>Before ascending the volcanic Mt. Rainier we witnessed the panoramic lushness of the surrounding Puyallup River Valley.</p></div>
+
+	<div class="textpopup3"><img src="images/rainier3.jpg" id="rainier3" alt="mount rainier picture 3"><p>Rays of the sunset illuminate an altocumulus cloud jettisoned from the sky into Mt. Rainier's peak. The glacier-fed White River floodplain over the eons has etched a path that winds down along the stratovolcano.</p></div>
+	
+</article>
+
+
+
+
+			<div class="date">Created: October 18, 2013</div>
+
+		<footer>
+		<!--Here is the HTML5 footer. Within it I have the copyright information.-->
+		&copy; Klein Design Inc. | Some Rights Reserved
+		</footer>
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+</section>
+
+</body>
+
+</html>
+<!--Last Updated: 09/19/13-->

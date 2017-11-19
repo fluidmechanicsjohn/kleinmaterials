@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Here is the html page for my review lab--> 
+
+<meta charset="utf-8">
+
+<title>Review</title>
+
+<link type="text/css" rel="stylesheet" href="stylepopup.css"> <!--This is the primary stylesheet I will be using. It allows me to make pop-text for the three images I chose.-->
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Prociono|Fontin|Vollkorn">
+<link type="text/css" rel="stylesheet" href="printstyle.css" media="print">
+<link type="text/css" rel="stylesheet" href="pulldownlinks.css"> <!--this is a new stylesheet to make drop-down links-->
+<link type="text/css" rel="stylesheet" href="linkstyle2.css"> <!--this stylesheet is made to tweak the navigation section specific to popup.html and is last on the cascade for this purpose-->
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Alegreya+Sans|Chicle' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="reviewstyle.css">
+</head>
+
+<body>
+
+<div class="banner">
+
+	<p id="text">Photoshop CS6 and<br> CSS 3 are Amazing!</p> <!--I am using an ID selector to stylize the text that is nested within the banner div. Using CSS I can make the text display over the background image of the browsers--> 
+</div>
+
+
+<nav> 
+<!--Each anchor link is nested within a list tag now so I can create a drop down menu at the end-->
+           <ul>
+	<li><a href="Index.html" class="button1">HOME</a> </li>
+	<li> <a href="DomainName.html" class="button1">DOMAIN NAME</a></li>
+	<li> <a href="Selectors.html" class="button1">SELECTORS</a></li>
+	<li> <a href="CSS.html" class="button1">CSS</a></li>
+	<li> <a href="PixelsColor.html" class="button1">PIXELS/COLOR</a></li>
+        <li> <a href="Reflections.html" class="button1">REFLECTIONS</a></li>
+	<li><a href="#" class="button2">MORELABS</a>
+		<ul>
+			<li><a href="#" class="button2">MORELABS</a></li>
+			<li><a href="popup.html" class="button1">POPUP</a></li>
+			<li><a href="resources.html" class="button1">RESOURCES</a></li>
+			<li><a href="review.html" class="button1">REVIEW</a></li>
+		</ul>
+	</li>
+	</ul>
+</nav>
+
+<section> <!--Here is the section element and within it is a heading and article element.-->
+<img src="images/EricMeyer.jpg" alt="Eric Meyer" id="book">
+
+	<header> <!--Here is the HTML5 header element and is used to style the title of the article.-->
+ 	 A Review of Eric A. Meyer's <span class="italic"> CSS: The Definitive Guide</span>
+
+	</header>
+
+
+		<div class="meta">An <span>Article</span> by <span>John Klein</span>
+		</div> <!--Here a div is used to italicize and color the font grey. Within the meta div are some in order to stylize the words "Article" and my name "John Klein"-->
+
+
+	<article>
+	<br><br><br>
+	<p>This is a great book to use as a reference. As a guide it does not show you how to make a beautiful awe-inspiring webpage. Instead it takes you through all the ins and outs of CSS technology. It starts out with the fundamental subject areas in regards to CSS and progresses into areas that are more rigorous. As far as programming languages go Meyer makes CSS seem intuitive. Meyer leaves nothing out; Everything a person needs to know about CSS is right in this book. Where this book excels over other reference books is Meyer's ability to turn an otherwise dry topic into a more appealing read. Perhaps I am biased because I previously had experience coding before I picked up this book. People new to CSS may find it unbearable. What they need to understand is that this is a comprehensive <span class="italic">guide</span> to CSS. To actually learn CSS you need to sit down at your computer and practice after seeing lots of previous examples. On another note, I especially like his presentation on units in CSS. Before this book I was kind of in the dark about what a pixel, em-height, and ex-height can be defined as.  
+</p>
+
+	</article>
+
+
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+</a>
+</p>
+         
+
+			<div class="date">Created: December 9, 2013</div>
+
+		<footer>
+		<!--Here is the HTML5 footer. Within it I have the copyright information.-->
+		&copy; Klein Design Inc. | Some Rights Reserved
+		</footer>
+
+</section>
+
+</body>
+
+</html>
+<!--Last Updated: 09/19/13-->

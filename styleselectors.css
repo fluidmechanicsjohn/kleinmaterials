@@ -1,0 +1,129 @@
+/*The purpose of this style sheet is to add additional styling to the elements that are unique to this page and to fulfill the lab's requirements. This style sheet builds off of the styledomain.css. Before the text shadows were not working and now I have them working. Beware I am not sure these text effects work in IE.*/
+
+* {
+font-size: 1.0em;
+font-weight: normal; 
+} /*This is the universal selector. In this case I am making all font weights normal and the font-size 1em as the default state unless otherwise specified.*/
+
+.banner {
+background-image:url('images/Selectors.jpg');
+} /*Instead of using an image src in HTML I am setting the image as a background. This is so I can put text over the background.*/
+
+
+#text {font-size: 4em;
+  letter-spacing: 0.2em;
+  color: white;
+  text-align: center;
+  display: inline;
+  font-family: "Fontin";
+  text-shadow: 0.04em 0.04em 0.05em #00cc99;
+/*I am constantly grouping declarations under one selector. According to w3c for readability it is important to have only one declaration per line. This ID pertains to the text that goes over the background image. I made the display: inline so it is displayed within the background image and there is no break.*/
+}
+
+footer, blockquote, .date {
+ color: #666666;
+} /*Here I am grouping three different selectors to all be the same dark grey color. This fulfills one part of the lab (grouping selectors)*/
+
+header {
+
+font-size: 2.5em;
+  letter-spacing: 0.1em;
+  color: black;
+  text-shadow: 0.05em 0.05em 0.05em grey;
+  text-align: left;
+
+}
+
+
+
+header span{
+  display: block;
+  margin-top: 0.5em;
+  font-size: 0.6em;
+  font-weight: normal;
+  letter-spacing: 0em;
+  text-shadow: none;
+
+}
+
+
+.meta{
+  font-family: Georgia;
+  color: rgba(69,54,37,0.6);
+  font-size: 0.85em;
+  font-style: italic;
+  letter-spacing: 0.25em;
+  border-bottom: 1px solid rgba(69,54,37,0.2);
+  padding-bottom: 0.5em;
+}
+
+.meta span{
+  text-transform: capitalize;
+  font-style: normal;
+  color: #00cc99;
+}
+
+article p{
+  font-family: Verdana;
+  -moz-column-count: 1;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 1;
+  -webkit-column-gap: 1em;
+  column-count: 1;
+  column-gap: 1em;
+  line-height: 1.5em;
+  color: rgb(69,54,37);
+}
+
+article blockquote{
+  font-size: 1em;
+  font-family: "Fontin";
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1;
+  letter-spacing: 0.1em;
+  
+}
+
+#quote{
+/*this is an image of an open quote floated to the left of the paragraph.*/
+float:left;
+}
+
+
+span.code {
+  font-family: "Fontin","Times New Roman",Georgia,Serif;
+  color:#003366;
+  font-size: small;
+}
+
+
+.date{
+  font-family: Georgia;
+  font-size: 0.75em;
+  font-style: italic;
+  letter-spacing: 0.25em;
+  border-top: 1px solid rgba(69,54,37,0.2);
+  display: block;
+  padding-top: 0.5em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+section {
+ width: 700px;
+ margin: auto;
+ background: none;
+ text-align: left;
+}
+
+footer {
+ text-align: center;
+ margin: 2em ;
+}
+
+.italic {
+ font-style: italic;
+}
+
+/*Last Updated: 09/07/13*/
