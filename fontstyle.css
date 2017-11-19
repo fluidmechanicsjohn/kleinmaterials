@@ -1,4 +1,4 @@
-/*This is a new stylesheet for the requirements of lab#9. I have imported new Google fonts into my first 3 webpages (Index.html, DomainName.html, and Selectors.html) and will be using these fonts and other font attributes in this stylesheet to change these 3 webpages. The mood I am going for is a less formal tone. Therefore I imported some stylish Google fonts. Oleo script swash caps and Chicle are more creative fonts whereas the Alegreya Sans is more straightforward. Where the article of the webpage begins is where I integrate Alegrey so the emphasis is taken away from the wacky font and more towards what I am writing.*/
+/*This is a new stylesheet for the requirements of lab#9. I have imported new Google fonts into my first 3 webpages (index.html, DomainName.html, and Selectors.html) and will be using these fonts and other font attributes in this stylesheet to change these 3 webpages. The mood I am going for is a less formal tone. Therefore I imported some stylish Google fonts. Oleo script swash caps and Chicle are more creative fonts whereas the Alegreya Sans is more straightforward. Where the article of the webpage begins is where I integrate Alegrey so the emphasis is taken away from the wacky font and more towards what I am writing.*/
 
 body {
 
@@ -21,7 +21,7 @@ font-family: 'Chicle', sans-serif;  /*unless otherwise specified the default fon
 
 .body p:first-child{
   font-size: 1em;
-  font-family: 'Alegreya Sans', sans serif; /*The first child of the div body which is just below the first border line will also be Alegreya Sans. This is the first sentence of the content on the Index.html and DomainName.html*/
+  font-family: 'Alegreya Sans', sans serif; /*The first child of the div body which is just below the first border line will also be Alegreya Sans. This is the first sentence of the content on the index.html and DomainName.html*/
   font-style: italic;
   -moz-column-count: 1;
   -webkit-column-count: 1;
